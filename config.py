@@ -11,8 +11,9 @@ OPENID_PROVIDERS = [
     { 'name': 'Flickr', 'url': 'http://www.flickr.com/<username>' },
     { 'name': 'MyOpenID', 'url': 'https://www.myopenid.com' }]
 
+
 #SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://admin:adminadmin@hktvmall.cidcw2rg51vi.us-east-1.rds.amazonaws.com:3306/HKTVmall'
+SQLALCHEMY_DATABASE_URI = 'mariadb+pymysql://root:Admin2425$@192.168.50.250:3309/HKTVmall'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://scott:tiger@localhost:5432/myapp'
 SQLALCHEMY_ECHO = True
 
