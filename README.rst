@@ -8,7 +8,8 @@ How to contribute:
 * `pip install -r requirements.txt`
 * `pip install sqlite-web`
 * `python -m pip install --upgrade setuptools`
-* `python3 -m venv venv`
 * `. venv/bin/activate`
+* `sudo apt install mysql`
+* `sudo apt install mysql-server`
 * `fabmanager run`
 
