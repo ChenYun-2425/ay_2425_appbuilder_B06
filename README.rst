@@ -6,5 +6,9 @@ How to contribute:
 
 * Create a virtual enviroment and activate it
 * `pip install -r requirements.txt`
-* `cd ea_assignment_hint_B`
+* `pip install sqlite-web`
+* * `python -m pip install --upgrade setuptools`
+* `python3 -m venv venv`
+* `. venv/bin/activate`
 * `fabmanager run`
+
