@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: white;
+    padding: 10px 5%; /* Added padding for better spacing */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.nav-left {
+    display: flex;
+    gap: 15px;
+    align-items: center; /* Ensure vertical alignment */
+    /* Removed redundant background-color (already in .navbar) */
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center; /* Ensure vertical alignment */
+    /* Removed margin-left: auto (conflicts with space-between) */
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    font-size: 16px; /* Consistent font size */
+    padding: 8px 12px; /* Better click area */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-left a {
+    color: rgb(102, 170, 0);
+}
+
+.nav-right a {
+    color: black;
+}
+
+/* Hover effects */
+.nav-left a:hover {
+    color: rgb(80, 150, 0); /* Darker green on hover */
+}
+
+.nav-right a:hover {
+    color: #555; /* Darker gray on hover */
+}

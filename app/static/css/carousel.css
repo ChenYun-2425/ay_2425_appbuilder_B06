@@ -1,0 +1,20 @@
+/* Add this to your existing CSS */
+.carousel-example-generic {
+    margin: 80px 0 20px 0; /* top right bottom left */
+    position: relative;
+    z-index: 1; /* Ensures proper stacking */
+    top: 100px;
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns children at top */
+    padding-top: 80px; /* Creates space at top */
+}
+
+.parent-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 40px; /* Space between carousel and next element */
+}

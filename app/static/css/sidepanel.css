@@ -1,0 +1,99 @@
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  
+  /* Left Sidebar */
+  .category-sidebar {
+    width: 250px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .product-count {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .category-section h3, 
+  .subcategory-section h4 {
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .category-section ul, 
+  .subcategory-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .category-section li, 
+  .subcategory-section li {
+    padding: 8px 0;
+    cursor: pointer;
+  }
+  
+  .subcategory-section li:hover {
+    color: #e53935;
+  }
+  
+  .subcategory-section span {
+    color: #999;
+    float: right;
+  }
+  
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .brand {
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  /* Right Content */
+  .product-listing {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .product-filters {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product-card {
+    height: 200px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+  }
