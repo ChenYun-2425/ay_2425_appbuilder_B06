@@ -12,4 +12,4 @@ How to contribute:
 * `sudo apt install mysql`
 * `sudo apt install mysql-server`
 * `fabmanager run`
-
+* `mysql -u admin -h hktvmall-database.cidcw2rg51vi.us-east-1.rds.amazonaws.com -P 3306 -p`
