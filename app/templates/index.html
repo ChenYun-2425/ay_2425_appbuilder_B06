@@ -1,105 +1,147 @@
-
 <!-- extend base layout -->
 {% extends "index_base.html" %}
 
 {% block head_css %}
         {{ super() }}
         <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
-        <link href="{{url_for('static',filename='css/carousel.css')}}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/topnav.css') }}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/categorynav.css') }}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/sidepanel.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<nav class="navbar">
-  <div class="nav-left">
-      <a href="https://cloud.marketing.hktvmall.com/HKLive/?utm_source=&utm_medium=&utm_campaign=&openinapp=true&autoTriggerApp=true&fastrender=true" data-tag="HKTV 直播">HKTV 直播</a>
-      <a href="https://www.theplace.shop/?utm_source=mall_web&utm_medium=hktvmall_landing&utm_campaign=LHS_header" data-tag="ThePlace網店平台">ThePlace網店平台</a>
-      <a href="https://cloud.marketing.hktvmall.com/ship-overseas?openinapp=true&autotriggerapp=true&fastrender=true&backstack=true" data-tag="直送海外">直送海外</a>
-      <a href="https://cloud.marketing.hktvmall.com/quickstartguide_zh/?openinapp=true&autoTriggerApp=true&backstack=true&fastrender=true" data-tag="新手攻略">新手攻略</a>
-      <a href="blog_post.html.j2" data-tag="VIP會員計劃">VIP會員計劃</a>
-      </div>
-  <div class="nav-right">
-      <a href="https://www.hktvmall.com/hktv/zh/cs-help" data-tag="常見問題">常見問題</a>
-      <a href="https://cloud.marketing.hktvmall.com/storelocationzh?footer" data-tag="O2O自取點">O2O自取點</a>
-      <a href="https://www.hktv.com.hk/big5/careers/recruit.php" data-tag="工作機會">工作機會</a>
-      <a href="https://business.hktvmall.com/?utm_source=mainappwebsite&utm_medium=merchantpartnership" data-tag="商戶加盟">商戶加盟</a>
-  </div>
-  </nav>
-  
-  <header class="header-container">
-    <div class="logo-container">
-      <a href="/">
-      <img src="https://images-dynamic.hktvmall.com/mkgb/common/cqa/qhv/MNjSuLWlwM20240508165218.png" alt="HKTVmall Logo" class="site-logo"></a>
-    </div><br>
-    <nav class="main-nav">
-      <a class="Bar0" href="#">Everuts</a>
-      <a class="Bar1" href="#">13Landmarks</a>
-      <a class="Bar2" href="#">超級巿場</a>
-      <a class="Bar3" href="#">護理保健</a>
-      <a class="Bar4" href="#">護膚化妝</a>
-      <a class="Bar5" href="#">時尚服飾</a>
-      <a class="Bar6" href="#">直送澳門</a>
-      <a class="Bar7" href="#">直送澳門</a>
-      <a class="Bar8" href="pets.html">寵物用品</a>
-      <a class="Bar9" href="#">母嬰育兒</a>
-      <a class="Bar10" href="#">大腦場</a>
-      <a class="Bar11" href="#">家居電器</a>
-      <a class="Bar12" href="#">家品家俬</a>
-      <a class="Bar13" href="#">運動旅行</a>
-      <a class="Bar14" href="#">玩具圖書</a>
-      <a class="Bar15" href="#">保險金融</a>
-      <a class="Bar16" href="#">吃喝玩樂</a>
-    </nav></header>
-  </div>
-  <div class="product-container">
-    <!-- Left Sidebar - Categories -->
-    <div class="category-sidebar">
-      <h2>商品分類</h2>
-      <div class="search-box">
-        <input type="text" placeholder="輸入品牌或產品名稱">
-        <span class="product-count">全場 2,456,706 件商品</span>
-      </div>
-      
-      <div class="category-section">
-        <h3>護膚用品</h3>
-        <ul>
-          <li>個人護理用品</li>
-          <li>保健產品</li>
-          <li>醫療產品</li>
-        </ul>
-      </div>
-      
-      <div class="subcategory-section">
-        <h4><a href="#">全部化妝品及香水 ></a></h4>
-        <ul>
-          <li>人氣品牌 <span>(852)</span></li>
-          <li>面部化妝 <span>(332)</span></li>
-        </ul>
-      </div>
-      
-      <div class="brand-section">
-        <h4>熱門品牌</h4>
-        <div class="brand-grid">
-          <div class="brand">LANEIGE</div>
-          <div class="brand">CANMAKE</div>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+       <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="jumbotron" style="background: url('static/img/slide1.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-desktop"></i> Flask App Builder</h1>
+            <p>{{_("Simple and rapid application development framework, built on top of Flask. includes detailed security, auto CRUD generation for your models, google charts and much more.")}}</p>
+            <center>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/dpgaspar/Flask-AppBuilder"
+                 role="button">{{_("Star it")}} <i class="fa fa-star"></i></a></p>
+            </center>
+            </div>
+           </div>
+        </div>
+
+        <div class="item">
+            <div class="jumbotron" style="background: url('static/img/slide2.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-github"></i> {{_("Free and Open Source")}}</h1>
+                <p>{{_("Use it any way you like, it's free to use. Feel free to contribute, post questions, propose new features, report bugs. You can browse the code freely on github.")}}</p>
+            <center>
+                <p><a class="btn btn-primary btn-lg" href="https://github.com/dpgaspar/Flask-AppBuilder/issues" role="button">{{_("Issues")}} &raquo;</a></p>
+            </center>
+            </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="jumbotron" style="background: url('static/img/slide3.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-book"></i> {{_("Documentation")}}</h1>
+            <p>{{_("Every feature is documented with examples. API documentation is automatically generated from commented code.")}}</p>
+            <center>
+            <p><a class="btn btn-primary btn-lg" href="http://flask-appbuilder.readthedocs.org/en/latest/" role="button">{{_("Documentation")}} &raquo;</a></p>
+            </center>
+            </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="jumbotron" style="background: url('static/img/slide4.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-play"></i> {{_("Live Demo")}}</h1>
+            <p>{{_("Login and get a hold on the quick how to example, with a simple contacts app. This will show the basic features of the framework. Feel free to login using user 'guest' password 'welcome'")}}</p>
+            <center>
+            <p><a class="btn btn-primary btn-lg"  href="login" role="button">{{_("Login")}} &raquo;</a></p>
+            </center>
+            </div>
+            </div>
+        </div>
+</div>
+
+    <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+
+      <div class="row" style="background:url('static/img/polaroid.png')">
+        <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+          <h2 class="featurette-heading">{{_("Super fast development ")}}<span class="text-muted">{{_(" Highly customizable")}}</span></h2>
+            <ul>
+          <li class="lead tight">{{_("Automatic menu generation.")}}</li>
+        <li class="lead tight">{{_("Automatic CRUD generation.")}}</li>
+        <li class="lead tight">{{_("Multiple actions on db records.")}}</li>
+        <li class="lead tight">{{_("Big variety of filters for your lists.")}}</li>
+        <li class="lead tight">{{_("Various view widgets: lists, master-detail, list of thumbnails etc")}}</li>
+        <li class="lead tight">{{_("Select2, Datepicker, DateTimePicker")}}</li>
+        <li class="lead tight">{{_("Google charts with automatic group by or direct values and filters.")}}</li>
+                </ul>
+        </div>
+        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
+          <h1><i class="fa fa-bolt fa-5x"></i></h1>
         </div>
       </div>
-    </div>
-  
-    <!-- Right Content - Products -->
-    <div class="product-listing">
-      <div class="product-filters">
-        <span>排序方式：默認</span>
-        <span>價格範圍：$0 - $20000</span>
+
+      <div class="row" style="background:url('static/img/fabric_1.png')">
+          <div class="col-md-3 col-md-offset-1 col-xs-offset-1 ">
+           <h1><i class="fa fa-lock fa-5x"></i></h1>
+          </div>
+          <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+            <h2 class="featurette-heading">{{_("Ready to go Security ")}}<span class="text-muted">{{_(" Fully granular")}}</span></h2>
+          <ul>
+            <li class="lead tight">{{_("Automatic permissions lookup, based on exposed methods.")}}</li>
+            <li class="lead tight">{{_("Inserts on the Database all the detailed permissions possible on your application.")}}</li>
+            <li class="lead tight">{{_("Public (no authentication needed) and Private permissions.")}}</li>
+            <li class="lead tight">{{_("Role based permissions.")}}</li>
+            <li class="lead tight">{{_("Authentication support for OpenID, Database and LDAP.")}}</li>
+            <li class="lead tight">{{_("Support for self user registration.")}}</li>
+          </ul>
+        </div>
       </div>
-      
-      <div class="product-grid">
-        <!-- Product items would go here -->
-        <div class="product-card">產品1</div>
-        <div class="product-card">產品2</div>
+
+      <div class="row featurette" style="background:url('static/img/old_moon.png')">
+        <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+          <h2 class="featurette-heading">{{_("Form Generation ")}}<span class="text-muted">{{_(" With full control")}}</span></h2>
+        <ul>
+            <li class="lead tight">{{_("Automatic, Add, Edit and Show from Database Models.")}}</li>
+            <li class="lead tight">{{_("Labels and descriptions for each field.")}}</li>
+            <li class="lead tight">{{_("Automatic base validators from model's definition.")}}</li>
+            <li class="lead tight">{{_("Custom validators, extra fields, custom filters for related dropdown lists.")}}</li>
+            <li class="lead tight">{{_("Image and File support for upload and database field association")}}</li>
+            <li class="lead tight">{{_("Field sets for Form's (Django style).")}}</li>
+        </ul>
+        </div>
+        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
+          <h1><i class="fa fa-list-alt fa-5x"></i></h1>
+        </div>
       </div>
-    </div>
-  </div>
-  {% endblock %}
+
+       <div class="row" style="background:url('static/img/green_cup.png')">
+          <div class="col-md-3 col-md-offset-1 col-xs-offset-1">
+           <h1><i class="fa fa-cog fa-5x"></i></h1>
+          </div>
+          <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+            <h2 class="featurette-heading">{{_("Multi Language Support ")}}<span class="text-muted">{{_(" and more")}}</span></h2>
+          <ul>
+            <li class="lead tight">{{_("Framework translations and your app translations merge.")}}</li>
+            <li class="lead tight">{{_("Bootstrap.")}}</li>
+            <li class="lead tight">{{_("Font Awesome Icons.")}}</li>
+            <li class="lead tight">{{_("Select2, Date Picker.")}}</li>
+          </ul>
+        </div>
+      </div>
+
+{% endblock %}
