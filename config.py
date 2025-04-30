@@ -12,8 +12,8 @@ OPENID_PROVIDERS = [
     { 'name': 'MyOpenID', 'url': 'https://www.myopenid.com' }]
 
 
-#SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://admin:adminadmin@hktvmall.cz266y4oaxhd.ap-southeast-2.rds.amazonaws.com:3306/HKTVmall'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+#SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://admin:adminadmin@hktvmall.cz266y4oaxhd.ap-southeast-2.rds.amazonaws.com:3306/HKTVmall'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://scott:tiger@localhost:5432/myapp'
 SQLALCHEMY_ECHO = True
 
